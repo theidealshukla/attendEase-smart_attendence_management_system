@@ -437,7 +437,7 @@
         </div>
     </div>
 
-<!--     <script> -->
+  <script> 
         document.addEventListener("DOMContentLoaded", function () {
             const loginPage = document.getElementById("login-page");
             const dashboardPage = document.getElementById("dashboard-page");
@@ -487,11 +487,8 @@
             }
         
             
-            if (localStorage.getItem("user")) {
-                showDashboard();
-            } else {
-                showLogin();
-            }
+            showDashboard(); // Always show dashboard
+
         });
         </script>
         
